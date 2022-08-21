@@ -1,0 +1,82 @@
+.conversation img
+{
+    height: 3rem;
+    width:3rem;
+    object-fit: cover;
+    border-radius:100%;
+    margin: 5px;
+   
+   
+}
+
+.conversation
+{
+    padding: 1.5rem;
+    height: 85%;
+    overflow-y: scroll;
+}
+
+.receiver
+{
+    /* border:2px solid green; */
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3px;
+    width: 80%;
+   
+}
+
+.sender
+
+{
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    width: 80%;
+    margin-left: auto;
+    margin-right: 10px;
+   
+    /* overflow-x: scroll; */
+
+}
+.receiver p
+{
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: rgb(255,255,255);
+}
+
+.sender p
+{
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: rgb(26,35,60);
+    color:white;
+}
+
+
+
+
+
+
+
+.conversation::-webkit-scrollbar {
+    display: none;
+}
+
+/* .online
+{
+    width:10px;
+    height:10px;
+    background-color: green;
+    border-radius: 100px;
+    position: relative;
+    bottom:100%;
+    right:10%;
+
+    
+
+} */
+
+

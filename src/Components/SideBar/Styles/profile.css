@@ -1,0 +1,56 @@
+.sender-container
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    
+/* background:rgb(245,248,252);
+border-radius: 16px;
+
+backdrop-filter: blur(3.9px);
+-webkit-backdrop-filter: blur(3.9px);
+border: 1px solid rgb(227, 232, 240); */
+  /* height: 25vh; */
+  margin-bottom: 1rem;
+  
+}
+
+.sender-container div
+{
+    display: flex;
+   align-items: center;
+   margin:6px 0;
+}
+
+.sender-image
+{
+   height: 5rem;
+   width:5rem;
+   border-radius: 100px;
+   object-fit: cover;
+ 
+   
+
+}
+
+.icons
+{
+    color: rgb(67, 181, 219);
+
+     margin-right: 10px;
+     
+}
+
+.sender-container h3
+{
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.option-icon
+{
+    cursor: pointer;
+}

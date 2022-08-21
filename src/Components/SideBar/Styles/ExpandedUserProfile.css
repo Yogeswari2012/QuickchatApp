@@ -1,0 +1,30 @@
+.senderimage
+{
+  width:20%;
+  margin-left:40%;
+  object-fit: contain;
+ 
+
+
+}
+
+
+.profile-details
+{
+  display:flex;
+  justify-content: center;
+  padding:2rem;
+
+  
+}
+
+.profile-details .values
+{
+  margin-left: 3rem;
+}
+
+.values p, .keys p
+{
+  margin: 1rem;
+}
+

@@ -1,0 +1,22 @@
+.messageComponent
+{
+    width:50vw;
+    height: 100vh;
+   display: flex;
+   
+ justify-content: space-between;
+   flex-direction: column;
+   
+}
+
+
+@media screen and (max-width:900px){
+
+  .messageComponent
+  {
+      width:80vw;
+    
+  }
+  
+}
+

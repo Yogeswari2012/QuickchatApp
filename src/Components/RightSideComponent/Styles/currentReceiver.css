@@ -1,0 +1,53 @@
+.receiver-name
+{
+     width: 100px;
+     height:100px;
+     border-radius: 100px;
+     background-color: rgb(201,219,255);
+     display: flex;
+   align-items: center;
+   justify-content: center;
+  
+}
+
+.receiver-container
+{
+    width: 95%;
+    /* border: 2px solid blue; */
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem 0;
+}
+
+.name,.email,.archive-user
+{
+    display: flex;
+margin-bottom: 10px;
+    align-items: center;
+   
+   
+}
+
+.archive-user
+{
+    border:3px solid rgb(48,99,255);
+    padding: 1rem;
+   color:rgb(48,99,255);
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.archive-user:hover
+{
+   
+   color:white;
+    background-color:rgb(48,99,255);
+}
+
+.email p,.name p{
+    color:rgb(75,100,126);
+    
+}

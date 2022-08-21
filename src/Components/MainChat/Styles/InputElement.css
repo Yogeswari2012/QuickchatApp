@@ -1,0 +1,122 @@
+.input-element
+{
+    display: flex;
+  height:8vh;
+   width:98%;
+   background-color: rgb(255,255,255);
+   margin-top: 1rem;
+   border-radius: 10px;
+   align-items: center;
+   justify-content: space-evenly;
+   margin: 1rem auto;
+ 
+
+}
+
+.message-field
+{
+    width: 80%;
+    border: 2px solid rgb(179, 176, 176);
+    height:60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius:10px ;
+   
+
+}
+
+.message-field input
+{
+    width: 85%;
+    height: 100%;
+    border: none;
+    margin-left: -20px;
+    background-color: transparent;
+    padding:5%;
+   
+
+}
+
+.message-field input:focus
+{
+    outline: none;
+}
+
+.paperclip
+{
+    color:rgb(150,157,175);
+    margin: auto;
+    
+}
+
+.smileicon
+{
+    color:rgb(230, 183, 90);
+}
+
+button{
+    height:60%;
+   width:15%;
+    border: none;
+    border-radius:10px ;
+    font-size: 1rem;
+    background-color:rgb(15,76,255);
+    color:white;
+    font-weight: 300;
+    cursor:pointer;
+}
+
+.send
+{
+    margin-left: 4px;
+}
+
+
+
+
+
+@media screen  and (max-width:750px ) {
+
+    .input-element
+    {
+        margin: 1rem 0;
+        width:100%;
+    }
+    .message-field
+    {
+        width:75%;
+    }
+}
+
+@media screen  and (max-width:600px ) {
+
+   
+    .message-field
+    {
+        width:55%;
+    }
+}
+
+@media screen  and (max-width:970px ) {
+
+   
+    .message-field
+    {
+        width:75%;
+    }
+}
+
+@media screen  and (max-width:550px ) {
+
+   
+    .message-field
+    {
+        width:55%;
+    }
+
+    .sendText
+    {
+        display:none;
+    }
+}

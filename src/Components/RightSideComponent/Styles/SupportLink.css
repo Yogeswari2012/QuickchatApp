@@ -1,0 +1,29 @@
+.support-container
+{
+    display:flex;
+   align-items: center;
+   padding:1rem;
+   flex-direction: column;
+   margin-top: 1rem;
+  
+}
+
+.support-container button{
+    width: 40%;
+   padding: 1rem;
+}
+
+.support-container h2{
+    color:rgb(17,40,64);
+   
+
+}
+
+.support-container p{
+    color:rgb(73,99,125);
+    margin: 1rem 0;
+    padding-left: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    
+}
