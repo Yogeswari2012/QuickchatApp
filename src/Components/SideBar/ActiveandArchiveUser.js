@@ -19,9 +19,9 @@ const ActiveArchiveUser=()=>
     return(
 
        <>
-          <UserDisplay  class="active"header="Active Conversation" users={users.activeUser}></UserDisplay>
+          <UserDisplay  class="active"header="Active Conversation" users={users.activeUser}  count={users.activeUser.length}></UserDisplay>
 
-          <UserDisplay  class="archive" header="Archieve Conversation" users={users.archiveUser}></UserDisplay>
+          <UserDisplay  class="archive" header="Archieve Conversation" users={users.archiveUser} count={users.archiveUser.length}></UserDisplay>
        </>
 
 

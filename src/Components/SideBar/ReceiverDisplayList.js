@@ -27,7 +27,7 @@ const UserDisplay=(props)=>
     return(
         <div className="userdisplay-container">
             <div className="userdisplay-header">
-         <p>{props.header}   <span>{props.header==='Active Conversation'? '7':'4'}</span></p>
+         <p>{props.header}   <span>{props.count}</span></p>
        
          <FontAwesomeIcon  className={display===true?"chevronIcon":"chevronIcon rotate"} icon={faChevronDown} onClick={changeUserDisplay}></FontAwesomeIcon>
          </div>
@@ -38,7 +38,7 @@ const UserDisplay=(props)=>
                 {
                     dispatch(changeCurrentUSer(user.emailId,user.name,user.id,user.img, user.isActive));
                 }}>
-                    <img className="user-images" src={user.img}></img>
+                    <img className="user-images" src={user.img} alt=""></img>
                     {user.name}
                   </li>  
             ))}

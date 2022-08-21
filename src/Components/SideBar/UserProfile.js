@@ -6,36 +6,34 @@ import { useDispatch  } from 'react-redux';
 import './Styles/profile.css';
 import { changeDisplay } from '../../Redux-Store/SenderProfile/SenderActionType';
 import Card from '../Card/Card';
+import { useSelector } from 'react-redux';
 
 const Profile=()=>
 {
 
  const dispatch=useDispatch();
 
-  const senderProfile={
-       name:'Bill Bradford',
-       designation: 'Lead UX/UI Developer',
-       contactNumber:'9966445544',
-       location: 'Banglore,India',
-       img:'https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=300&q=60',
-       emailId:"billbraford@gmail.com"
-
-  }
-
+const values=useSelector(state=>
+  {
+    return{
+      userProfile: state.senderProfile
+    }
+  })
+console.log(values);
   return(
   <Card class="sender-container">
             
            
-           <img  className="sender-image"src={senderProfile.img}></img>
+           <img  className="sender-image"src={values.userProfile.img} alt=""></img>
            <div >
-           <h3>{senderProfile.name}</h3>
+           <h3>{values.userProfile.name}</h3>
            <FontAwesomeIcon className="option-icon"   onClick={()=>
           {
             dispatch(changeDisplay())
           }} icon={faGear}></FontAwesomeIcon>
            </div>
           
-           <p>{senderProfile.designation}</p>
+           <p>{values.userProfile.designation}</p>
            <div>
             <FontAwesomeIcon  className="icons"icon={faToggleOn}></FontAwesomeIcon>
             <p>Active</p>
